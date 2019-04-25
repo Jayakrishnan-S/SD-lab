@@ -1,0 +1,335 @@
+student@T21:~$  touch myfile1.txt
+student@T21:~$ cd ajce
+student@T21:~/ajce$ cd mca
+student@T21:~/ajce/mca$ cd rmca
+student@T21:~/ajce/mca/rmca$ touch myfile1.txt
+student@T21:~/ajce/mca/rmca$ touch f2.txt
+student@T21:~/ajce/mca/rmca$ cat myfile.txt
+cat: myfile.txt: No such file or directory
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cd..
+cd..: command not found
+student@T21:~/ajce/mca/rmca$ cd ..
+student@T21:~/ajce/mca$ cat myfile1.txt
+cat: myfile1.txt: No such file or directory
+student@T21:~/ajce/mca$ cd rmca
+student@T21:~/ajce/mca/rmca$ cat >file1.txt
+hello..
+hai..
+how r u..
+^C
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+hello..
+hai..
+how r u..
+student@T21:~/ajce/mca/rmca$ cat >file1.txt
+hahaha...^C
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt>file1.txt 
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat >file1.txt
+hahaha^C
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt>>file1.txt
+student@T21:~/ajce/mca/rmca$ cat >file1.txt
+buhahahah
+^C
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+buhahahah
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt>>file1.txt
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat file1.txt myfile1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat -n file1.txt
+     1	buhahahah
+     2	hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat >f1.txt
+hohoii..
+hahahoii..
+hehehoii^C
+student@T21:~/ajce/mca/rmca$ cat f1.txt
+hohoii..
+hahahoii..
+student@T21:~/ajce/mca/rmca$ cat file1.txt myfile.txt f1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+cat: myfile.txt: No such file or directory
+hohoii..
+hahahoii..
+student@T21:~/ajce/mca/rmca$ cat file1.txt myfile1.txt f1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+hohoii..
+hahahoii..
+student@T21:~/ajce/mca/rmca$ cat -n  file1.txt myfile1.txt f1.txt
+     1	buhahahah
+     2	hai ... hey... hurrey...oii... kuii...hello...
+     3	hai ... hey... hurrey...oii... kuii...hello...
+     4	hohoii..
+     5	hahahoii..
+student@T21:~/ajce/mca/rmca$ cat file1.txt myfile1.txt > f1.txt
+student@T21:~/ajce/mca/rmca$ cat f1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat f1.txt; cat file1.txt;cat myfile1.txt;
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat >f1.txt
+1 
+2
+3
+
+
+4
+  
+ 
+5 
+
+
+
+6 
+7
+8
+^C
+student@T21:~/ajce/mca/rmca$ cat -s f1.txt
+1
+2
+3
+
+4
+ 
+ 
+5
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ tac f1.txt
+8
+7
+6
+
+
+
+5
+ 
+ 
+4
+
+
+3
+2
+1
+student@T21:~/ajce/mca/rmca$ man cat
+student@T21:~/ajce/mca/rmca$ cat *.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ man tac
+student@T21:~/ajce/mca/rmca$ man cat
+student@T21:~/ajce/mca/rmca$ cat -e f1
+cat: f1: No such file or directory
+student@T21:~/ajce/mca/rmca$ cat -e f1.txt
+1$
+2$
+3$
+$
+$
+4$
+ $
+ $
+5$
+$
+$
+$
+6$
+7$
+8$
+student@T21:~/ajce/mca/rmca$ cat -v f1.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ cat -p f1.txt
+cat: invalid option -- 'p'
+Try 'cat --help' for more information.
+student@T21:~/ajce/mca/rmca$ cat -P f1.txt
+cat: invalid option -- 'P'
+Try 'cat --help' for more information.
+student@T21:~/ajce/mca/rmca$ cat -b f1.txt
+     1	1
+     2	2
+     3	3
+
+
+     4	4
+     5	 
+     6	 
+     7	5
+
+
+
+     8	6
+     9	7
+    10	8
+student@T21:~/ajce/mca/rmca$ mv f1.txt myfile.txt
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  file1.txt  jk  myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca$ cat myfile.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ mv myfile.txt myfile1.txt
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  file1.txt  jk  myfile1.txt
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ man mv
+student@T21:~/ajce/mca/rmca$ mv -n myfile1.txt file1.txt
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  file1.txt  jk  myfile1.txt
+student@T21:~/ajce/mca/rmca$ cat file1.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ mv file1.txt mca
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  jk  mca  myfile1.txt
+student@T21:~/ajce/mca/rmca$ cd ..
+student@T21:~/ajce/mca$ ls
+h.txt  intmca  lmca  out.txt  rmca
+student@T21:~/ajce/mca$ mv mca myfile.txt
+mv: cannot stat 'mca': No such file or directory
+student@T21:~/ajce/mca$ cd rmca
+student@T21:~/ajce/mca/rmca$ mv mca myfile.txt
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  jk  myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca$ mv -i myfile.txt myfile1.txt
+mv: overwrite 'myfile1.txt'? n
+student@T21:~/ajce/mca/rmca$ ls
+f2.txt  jk  myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca$  cat myfile.txt
+buhahahah
+hai ... hey... hurrey...oii... kuii...hello...
+student@T21:~/ajce/mca/rmca$ cat myfile1.txt
+1
+2
+3
+
+
+4
+ 
+ 
+5
+
+
+
+6
+7
+8
+student@T21:~/ajce/mca/rmca$ mv myfile.txt myfile1.txt jk
+student@T21:~/ajce/mca/rmca$ ls
+.f2.txt  jk
+student@T21:~/ajce/mca/rmca$ cd jk
+student@T21:~/ajce/mca/rmca/jk$ ls
+myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca/jk$ mkdir kj
+student@T21:~/ajce/mca/rmca/jk$ ls
+kj  myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca/jk$ mv *.txt kj
+student@T21:~/ajce/mca/rmca/jk$ cd kj
+student@T21:~/ajce/mca/rmca/jk/kj$ ls
+myfile1.txt  myfile.txt
+student@T21:~/ajce/mca/rmca/jk/kj$ man mv
+student@T21:~/ajce/mca/rmca/jk/kj$ mv -t jk myfile.txt
+mv: failed to access 'jk': No such file or directory
+student@T21:~/ajce/mca/rmca/jk/kj$ man mv
+student@T21:~/ajce/mca/rmca/jk/kj$ man mv
+student@T21:~/ajce/mca/rmca/jk/kj$ man mv
+student@T21:~/ajce/mca/rmca/jk/kj$ man mv
+student@T21:~/ajce/mca/rmca/jk/kj$ 
+

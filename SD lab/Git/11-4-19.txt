@@ -1,0 +1,55 @@
+student@T21:~$ cd jk
+student@T21:~/jk$ mkdir git
+student@T21:~/jk$ cd git
+student@T21:~/jk/git$ git clone https://github.com/Jayakrishnan-S/myTest3.git
+Cloning into 'myTest3'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 1), reused 11 (delta 1), pack-reused 0
+Unpacking objects: 100% (13/13), done.
+student@T21:~/jk/git$ cd..
+cd..: command not found
+student@T21:~/jk/git$ cd myTest3
+student@T21:~/jk/git/myTest3$ git branch -d feature
+error: branch 'feature' not found.
+student@T21:~/jk/git/myTest3$ git branch -d feature_x
+error: branch 'feature_x' not found.
+student@T21:~/jk/git/myTest3$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+student@T21:~/jk/git/myTest3$ git branch -d feature_x
+error: branch 'feature_x' not found.
+student@T21:~/jk/git/myTest3$ git checkout feature_x
+Branch 'feature_x' set up to track remote branch 'feature_x' from 'origin'.
+Switched to a new branch 'feature_x'
+student@T21:~/jk/git/myTest3$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+student@T21:~/jk/git/myTest3$ git branch -d feature_x
+warning: deleting branch 'feature_x' that has been merged to
+         'refs/remotes/origin/feature_x', but not yet merged to HEAD.
+Deleted branch feature_x (was 09a4346).
+student@T21:~/jk/git/myTest3$ git fetch orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@T21:~/jk/git/myTest3$ git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Jayakrishnan-S/myTest3
+ * branch            master     -> FETCH_HEAD
+   f8166f5..60723b2  master     -> origin/master
+student@T21:~/jk/git/myTest3$ git diff
+student@T21:~/jk/git/myTest3$ git merge origin master
+Updating f8166f5..60723b2
+Fast-forward
+ sam.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+student@T21:~/jk/git/myTest3$ 
+

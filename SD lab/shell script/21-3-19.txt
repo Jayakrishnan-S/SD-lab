@@ -1,0 +1,102 @@
+student@T21:~$ vi jk.sh
+student@T21:~$ chmod +x jk.sh
+student@T21:~$ ./jk.sh
+hello
+student@T21:~$ gedit sample.sh
+student@T21:~$ chmod +x sample.sh
+student@T21:~$ ./sample.sh
+hai
+student@T21:~$ gedit 1p.sh
+student@T21:~$ ./1p.sh
+bash: ./1p.sh: Permission denied
+student@T21:~$ chmod +x 1p.sh
+student@T21:~$ ./1p.sh
+hello world!
+the date today is Thu Mar 21 14:29:55 IST 2019
+current directory is /home/student
+student@T21:~$ gedit 2p.sh
+student@T21:~$ chmod +x 2p.sh
+student@T21:~$ ./2p.sh
+student@T21:~$ gedit 2p.sh
+student@T21:~$ ./2p.sh
+Value of var is test string
+student@T21:~$ gedit 3p.sh
+student@T21:~$ chmod +x 3p.sh
+student@T21:~$ ./3p.sh
+Value of var is $var
+student@T21:~$ gedit 4p.sh
+student@T21:~$ chmod +x 4p.sh
+student@T21:~$ ./4p.sh a b c d e
+The command is ./4p.sh
+The first argument is a
+The second argument is b
+The third argument is c
+The fourth argument is d
+student@T21:~$ gedit 4p.sh
+student@T21:~$ ./4p.sh a b c d 
+The command is ./4p.sh
+The first argument is a
+The second argument is b
+The third argument is c
+The fourth argument is d
+the no. of arguments is 4
+the no. parameters passed a b c d
+the no. parameters passed a b c d
+student@T21:~$ gedit 4p.sh
+student@T21:~$ ./4p.sh a b c d 
+The command is ./4p.sh
+The first argument is a
+The second argument is b
+The third argument is c
+The fourth argument is d
+the no. of arguments is 4
+the parameters passed a b c d
+the parameters passed a b c d
+student@T21:~$ gedit 5p.sh
+student@T21:~$ chmod +x 5p.sh
+student@T21:~$ ./5p.sh 
+
+
+student@T21:~$ gedit 5p.sh
+
+student@T21:~$ 
+student@T21:~$ ./5p.sh 
+
+
+student@T21:~$ gedit 6p.sh
+student@T21:~$ chmod +x 6p.sh
+student@T21:~$ ./6p.sh 
+5+10=15
+student@T21:~$ gedit 6p.sh
+student@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers: a5 4
+./6p.sh: line 6: 5 4: syntax error in expression (error token is "4")
++5 4=15
+student@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers: a1
++1=1
+student@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers: a
++=0
+student@T21:~$ gedit 6p.sh
+^[[Astudent@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers:4 5 
+4+5=9
+student@T21:~$ gedit 6p.sh
+student@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers:4
+4+=4
+Sum is 30
+student@T21:~$ 
+student@T21:~$ ./6p.sh 
+5+10=15
+Enter two numbers:4 2
+4+2=6
+Sum is 30
+student@T21:~$ 
+

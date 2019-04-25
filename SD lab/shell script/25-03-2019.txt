@@ -1,0 +1,101 @@
+student@T21:~$ cd jk
+student@T21:~/jk$ gedit if.sh
+student@T21:~/jk$ chmod +x if.sh
+student@T21:~/jk$ ./if.sh
+enter a number:5
+./if.sh: line 3: [: missing `]'
+./if.sh: line 6: [: missing `]'
+positive
+student@T21:~/jk$ gedit if.sh
+student@T21:~/jk$ ./if.sh
+enter a number:5
+positive
+student@T21:~/jk$ ./if.sh
+enter a number:0
+zero
+student@T21:~/jk$ ./if.sh
+enter a number:-5
+negative
+student@T21:~/jk$ gedit 8p.sh
+student@T21:~/jk$ chmod +x 8p.sh
+student@T21:~/jk$ ./8p.sh
+../8p.sh: line 5: syntax error near unexpected token `then'
+./8p.sh: line 5: ` then'
+student@T21:~/jk$ gedit 8p.sh
+student@T21:~/jk$ ./8p.sh
+./8p.sh: line 5: syntax error near unexpected token `then'
+./8p.sh: line 5: ` then'
+student@T21:~/jk$ ./8p.sh monday
+./8p.sh: line 5: syntax error near unexpected token `then'
+./8p.sh: line 5: ` then'
+student@T21:~/jk$ gedit 8p.sh
+^[[A^[[Astudent@T21:~/jk$ ./8p.sh monday
+the typed argument is monday.
+student@T21:~/jk$ ./8p.sh tuesday
+typed argument is tuesday
+student@T21:~/jk$ ./8p.sh 
+./8p.sh: line 1: [: ==: unary operator expected
+./8p.sh: line 4: [: ==: unary operator expected
+typed argument is neither monday or tuesday
+student@T21:~/jk$ ./8p.sh sunday
+typed argument is neither monday or tuesday
+student@T21:~/jk$ gedit9p.sh
+gedit9p.sh: command not found
+student@T21:~/jk$ gedit 9p.sh
+student@T21:~/jk$ chmod +x 9p.sh
+student@T21:~/jk$ ./9p.sh 
+3 times 5 is 15
+2 times 5 is 10
+5 times 5 is 25
+7 times 5 is 35
+student@T21:~/jk$ gedit 10p.sh
+student@T21:~/jk$ chmod +x 10p.sh
+student@T21:~/jk$ ./10p.sh 
+./10p.sh: line 3: syntax error near unexpected token `('
+./10p.sh: line 3: ` echo $i "* 5 =" (( $i*5 ))'
+student@T21:~/jk$ gedit 10p.sh
+student@T21:~/jk$ ./10p.sh 
+ 1  * 5 =  5 
+ 2  * 5 =  10 
+ 3  * 5 =  15 
+ 4  * 5 =  20 
+ 5  * 5 =  25 
+ 6  * 5 =  30 
+ 7  * 5 =  35 
+ 8  * 5 =  40 
+ 9  * 5 =  45 
+ 10  * 5 =  50 
+student@T21:~/jk$ gedit 11p.sh
+student@T21:~/jk$ chmod +x 11p.sh
+student@T21:~/jk$ ./11p.sh 
+ even numbers are 1 
+ even numbers are 3 
+ even numbers are 5 
+ even numbers are 7 
+ even numbers are 9 
+student@T21:~/jk$ gedit 11p.sh
+student@T21:~/jk$ ./11p.sh 
+ even numbers are 0 
+ even numbers are 2 
+ even numbers are 4 
+ even numbers are 6 
+ even numbers are 8 
+ even numbers are 10 
+student@T21:~/jk$ gedit 11p.sh
+student@T21:~/jk$ ./11p.sh 
+ odd numbers are 1 
+ odd numbers are 3 
+ odd numbers are 5 
+ odd numbers are 7 
+ odd numbers are 9 
+student@T21:~/jk$ gedit 12p.sh
+student@T21:~/jk$ chmod +x 12p.sh
+student@T21:~/jk$ ./12p.sh 
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+student@T21:~/jk$ ^C
+student@T21:~/jk$ 
+

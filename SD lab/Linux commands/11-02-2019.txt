@@ -1,0 +1,79 @@
+student@T21:~$ man cp
+student@T21:~$ man cp
+student@T21:~$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T21:~$ mkdir ajce
+student@T21:~$ cat > mca.txt
+hai ajce
+^C
+student@T21:~$ man cp
+student@T21:~$ cp mca.txt ajce
+student@T21:~$ ls
+ajce     Documents  examples.desktop  Music     Public     Videos
+Desktop  Downloads  mca.txt           Pictures  Templates
+student@T21:~$ cd ajce
+student@T21:~/ajce$ ls
+mca.txt
+student@T21:~/ajce$ man cp
+student@T21:~/ajce$ cp >r.txt
+cp: missing file operand
+Try 'cp --help' for more information.
+student@T21:~/ajce$ cat >r.txt
+hurrey
+^C
+student@T21:~/ajce$ cat > l.txt
+hahahah
+^C
+student@T21:~/ajce$ mkdir rmca
+student@T21:~/ajce$ cp r.txt l.txt rmca
+student@T21:~/ajce$ cd rmca
+student@T21:~/ajce/rmca$ ls
+l.txt  r.txt
+student@T21:~/ajce/rmca$ 
+student@T21:~/ajce/rmca$ mkdir jk
+student@T21:~/ajce/rmca$ man cp
+student@T21:~/ajce/rmca$ cp -b r.txt jk
+student@T21:~/ajce/rmca$ ls
+jk  l.txt  r.txt
+student@T21:~/ajce/rmca$ cd jk
+student@T21:~/ajce/rmca/jk$ ls
+r.txt
+student@T21:~/ajce/rmca/jk$ cd..
+cd..: command not found
+student@T21:~/ajce/rmca/jk$ cd ..
+student@T21:~/ajce/rmca$ man cp
+student@T21:~/ajce/rmca$ man cp
+student@T21:~/ajce/rmca$ cp -i i.txt jk
+cp: cannot stat 'i.txt': No such file or directory
+student@T21:~/ajce/rmca$ ls
+jk  l.txt  r.txt
+student@T21:~/ajce/rmca$ cp -i l.txt jk
+student@T21:~/ajce/rmca$ ls
+jk  l.txt  r.txt
+student@T21:~/ajce/rmca$ cd jk
+student@T21:~/ajce/rmca/jk$ ls
+l.txt  r.txt
+student@T21:~/ajce/rmca/jk$ mkdir 20
+student@T21:~/ajce/rmca/jk$ ls
+20  l.txt  r.txt
+student@T21:~/ajce/rmca/jk$ mkdir stu
+student@T21:~/ajce/rmca/jk$ cd 20
+student@T21:~/ajce/rmca/jk/20$ cd..
+cd..: command not found
+student@T21:~/ajce/rmca/jk/20$ cd ..
+student@T21:~/ajce/rmca/jk$ cp l.txt r.txt 20
+student@T21:~/ajce/rmca/jk$ cd 20
+student@T21:~/ajce/rmca/jk/20$ ls
+l.txt  r.txt
+student@T21:~/ajce/rmca/jk/20$ cd ..
+student@T21:~/ajce/rmca/jk$ cp -r 20 stu 
+student@T21:~/ajce/rmca/jk$ ls
+20  l.txt  r.txt  stu
+student@T21:~/ajce/rmca/jk$ cd stu
+.student@T21:~/ajce/rmca/jk/stu$ ls
+20
+student@T21:~/ajce/rmca/jk/stu$ cd 20
+student@T21:~/ajce/rmca/jk/stu/20$ ls
+l.txt  r.txt
+student@T21:~/ajce/rmca/jk/stu/20$ 
+

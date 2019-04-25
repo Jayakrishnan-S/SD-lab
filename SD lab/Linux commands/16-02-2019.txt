@@ -1,0 +1,154 @@
+student@T21:~$ cd ajce
+student@T21:~/ajce$ 
+student@T21:~/ajce$ 
+student@T21:~/ajce$ cd rmca
+student@T21:~/ajce/rmca$ touch f1.txt
+student@T21:~/ajce/rmca$ cat > f1.txt
+1
+47
+ssgt
+jkgh
+114
+1144
+j
+ghf
+yhjj
+^C
+student@T21:~/ajce/rmca$ wc f1.txt
+ 9  9 35 f1.txt
+student@T21:~/ajce/rmca$ wc -l f1.txt
+9 f1.txt
+student@T21:~/ajce/rmca$ wc -c f1.txt
+35 f1.txt
+student@T21:~/ajce/rmca$ wc -m f1.txt
+35 f1.txt
+student@T21:~/ajce/rmca$ wc -L f1.txt
+4 f1.txt
+student@T21:~/ajce/rmca$ wc -w f1.txt
+9 f1.txt
+student@T21:~/ajce/rmca$ touch f.txt
+student@T21:~/ajce/rmca$ cat > f1.txt
+hai 
+how are you ... iam fine thanks...how are you
+^C
+student@T21:~/ajce/rmca$ wc -l f1.txt
+2 f1.txt
+student@T21:~/ajce/rmca$ wc f.txt
+0 0 0 f.txt
+student@T21:~/ajce/rmca$ wc f1.txt
+ 2 10 51 f1.txt
+student@T21:~/ajce/rmca$ cut -c1 f1.txt
+h
+h
+student@T21:~/ajce/rmca$ cat f1.txt
+hai 
+how are you ... iam fine thanks...how are you
+student@T21:~/ajce/rmca$ cut -c4 f1.txt
+ 
+ 
+student@T21:~/ajce/rmca$ cut -c3 f1.txt
+.i
+w
+student@T21:~/ajce/rmca$ cut -c2 f1.txt
+a
+o
+student@T21:~/ajce/rmca$ cut -b1 f1.txt
+h
+h
+student@T21:~/ajce/rmca$ man cut
+student@T21:~/ajce/rmca$ cut -c5 f.txt
+h
+l
+w
+
+g
+4
+ 
+a
+3
+w
+student@T21:~/ajce/rmca$ cut -c12345 f.txt
+
+
+
+
+
+
+
+
+
+
+student@T21:~/ajce/rmca$ cut -c1,2,3,4,5 f.txt
+hai	h
+hsqkl
+g345w
+tg
+dsffg
+rwt24
+     
+sdfga
+r3t43
+fewfw
+student@T21:~/ajce/rmca$ cut -f1,2,3,4,5 f.txt
+hai	haha
+hsqklk	h	ojjd	okkklk
+g345wtyg
+tg
+dsffgertg
+rwt24t
+       t53t
+sdfgawgy53
+r3t43t3f
+fewfw
+student@T21:~/ajce/rmca$ cut -f1 f.txt
+hai
+hsqklk
+g345wtyg
+tg
+dsffgertg
+rwt24t
+       t53t
+sdfgawgy53
+r3t43t3f
+fewfw
+student@T21:~/ajce/rmca$ cut -f2 f.txt
+haha
+h
+g345wtyg
+tg
+dsffgertg
+rwt24t
+       t53t
+sdfgawgy53
+r3t43t3f
+fewfw
+student@T21:~/ajce/rmca$ touch f3.txt
+student@T21:~/ajce/rmca$ cat > f3.txt
+1       jk	mca
+2	jomy	mca
+3	kiran	mca
+^C
+student@T21:~/ajce/rmca$ cut -f1 f3.txt
+1
+2
+3
+student@T21:~/ajce/rmca$ cut -f2 f3.txt
+jk
+jomy
+kiran
+student@T21:~/ajce/rmca$ cut -f3 f3.txt
+mca
+mca
+mca
+student@T21:~/ajce/rmca$ cut -f1,2 f3.txt
+1	jk
+2	jomy
+3	kiran
+student@T21:~/ajce/rmca$ cut -f3,2 f3.txt
+jk	mca
+jomy	mca
+kiran	mca
+student@T21:~/ajce/rmca$ man cut
+student@T21:~/ajce/rmca$ man cut
+student@T21:~/ajce/rmca$ 
+

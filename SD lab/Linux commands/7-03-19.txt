@@ -1,0 +1,101 @@
+student@T21:~$ cd ajce
+student@T21:~/ajce$ man greb
+No manual entry for greb
+student@T21:~/ajce$ man grep
+student@T21:~/ajce$ grep "cotta" b.txt
+sastham cotta
+student@T21:~/ajce$ grep "a" b.txt
+sastham cotta
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ grep "a" b.txt a.txt
+b.txt:sastham cotta
+b.txt:kasargodu
+b.txt:alappuzha
+b.txt:adoor
+b.txt:adoor
+a.txt:kiran
+a.txt:teena
+student@T21:~/ajce$ 
+student@T21:~/ajce$ grep -i "A" b.txt a.txt
+b.txt:sastham cotta
+b.txt:kasargodu
+b.txt:alappuzha
+b.txt:adoor
+b.txt:adoor
+a.txt:kiran
+a.txt:teena
+student@T21:~/ajce$ grep  "A" b.txt a.txt
+student@T21:~/ajce$ grep -i "A" b.txt a.txt
+b.txt:sastham cotta
+b.txt:kasargodu
+b.txt:alappuzha
+b.txt:adoor
+b.txt:adoor
+a.txt:kiran
+a.txt:teena
+student@T21:~/ajce$ grep -v "as" b.txt
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ grep -v "as" b.txt a.txt
+b.txt:alappuzha
+b.txt:adoor
+b.txt:adoor
+a.txt:jk
+a.txt:
+a.txt:
+a.txt:kiran
+a.txt:
+a.txt:
+a.txt:joseph
+a.txt:
+a.txt:
+a.txt:teena
+a.txt:
+a.txt:fergy
+student@T21:~/ajce$ man grep
+student@T21:~/ajce$ grep -c "as" b.txt
+2
+student@T21:~/ajce$ grep -w adoor
+^[[Aq^C
+student@T21:~/ajce$ grep -w adoor b.txt
+adoor
+adoor
+student@T21:~/ajce$ egrep -w adoor|sastham b.txt
+sastham: command not found
+^[[A^C
+student@T21:~/ajce$ egrep -w 'adoor|sastham' b.txt
+sastham cotta
+adoor
+adoor
+student@T21:~/ajce$ grep -n adoor b.txt
+4:adoor
+5:adoor
+student@T21:~/ajce$ grep -^ ad b.txt
+grep: invalid option -- '^'
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+student@T21:~/ajce$ grep "^ ad" b.txt
+student@T21:~/ajce$ grep "^ad" b.txt
+adoor
+adoor
+student@T21:~/ajce$ grep "ad$" b.txt
+student@T21:~/ajce$ grep "or$" b.txt
+adoor
+adoor
+student@T21:~/ajce$ grep -B2 "adoor"b.txt
+ ^C
+student@T21:~/ajce$ grep -B2 "adoor" b.txt
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ grep -A2 "kasargodu" b.txt
+kasargodu
+alappuzha
+adoor
+student@T21:~/ajce$ 
+

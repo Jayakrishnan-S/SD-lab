@@ -1,0 +1,164 @@
+student@T21:~$ man head
+student@T21:~$ cd ajce
+student@T21:~/ajce$ ls
+a  a.txt  b.txt  buh.txt  c.txt  f1.txt  h  l.txt  mca.txt  rmca  r.txt
+student@T21:~/ajce$ 
+student@T21:~/ajce$ cat b.txt
+sastham cotta
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ cat a.txt
+jk
+
+
+kiran
+
+
+joseph
+
+
+teena
+
+fergy
+student@T21:~/ajce$ cat > ha.txt
+jk
+kiran
+jomy
+joseph
+siju
+arjun a
+arjun Op
+sandeep
+vishnu
+ajil
+henal
+jobin
+sanjay
+jithu
+jikku
+shamshad
+^C
+student@T21:~/ajce$ head ha.txt
+jk
+kiran
+jomy
+joseph
+siju
+arjun a
+arjun Op
+sandeep
+vishnu
+ajil
+student@T21:~/ajce$ tail ha.txt
+arjun Op
+sandeep
+vishnu
+ajil
+henal
+jobin
+sanjay
+jithu
+jikku
+shamshad
+student@T21:~/ajce$ head -n 15 ha.txt
+jk
+kiran
+jomy
+joseph
+siju
+arjun a
+arjun Op
+sandeep
+vishnu
+ajil
+henal
+jobin
+sanjay
+jithu
+jikku
+student@T21:~/ajce$ head -n 16 ha.txt |tail -n 6 ha.txt
+henal
+jobin
+sanjay
+jithu
+jikku
+shamshad
+student@T21:~/ajce$ head -n 16 ha.txt |tail -n 7 ha.txt
+ajil
+henal
+jobin
+sanjay
+jithu
+jikku
+shamshad
+student@T21:~/ajce$ head ha.txt b.txt
+==> ha.txt <==
+jk
+kiran
+jomy
+joseph
+siju
+arjun a
+arjun Op
+sandeep
+vishnu
+ajil
+
+==> b.txt <==
+sastham cotta
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ tail ha.txt b.txt
+==> ha.txt <==
+arjun Op
+sandeep
+vishnu
+ajil
+henal
+jobin
+sanjay
+jithu
+jikku
+shamshad
+
+==> b.txt <==
+sastham cotta
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ head -n 2 ha.txt b.txt
+==> ha.txt <==
+jk
+kiran
+
+==> b.txt <==
+sastham cotta
+kasargodu
+student@T21:~/ajce$ man head
+student@T21:~/ajce$ man tail
+student@T21:~/ajce$ head -c 10 ha.txt
+jk
+kiran
+jstudent@T21:~/ajce$ head -q ha.txt b.txt
+jk
+kiran
+jomy
+joseph
+siju
+arjun a
+arjun Op
+sandeep
+vishnu
+ajil
+sastham cotta
+kasargodu
+alappuzha
+adoor
+adoor
+student@T21:~/ajce$ 
+

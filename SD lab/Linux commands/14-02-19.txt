@@ -1,0 +1,108 @@
+student@T21:~$ cd ajce
+student@T21:~/ajce$ cd mca
+bash: cd: mca: No such file or directory
+student@T21:~/ajce$ cd jk
+bash: cd: jk: No such file or directory
+student@T21:~/ajce$ cd rmca
+student@T21:~/ajce/rmca$ cd jk
+student@T21:~/ajce/rmca/jk$ pwd
+/home/student/ajce/rmca/jk
+student@T21:~/ajce/rmca/jk$ cd ..
+student@T21:~/ajce/rmca$ cd ..
+student@T21:~/ajce$ l.txt r.txt /home/student/ajce/rmca/jk
+l.txt: command not found
+student@T21:~/ajce$ mca.txt r.txt /home/student/ajce/rmca/jk
+mca.txt: command not found
+student@T21:~/ajce$ r.txt /home/student/ajce/rmca/jk
+r.txt: command not found
+student@T21:~/ajce$ cp l.txt r.txt /home/student/ajce/rmca/jk
+student@T21:~/ajce$ cd rmca
+student@T21:~/ajce/rmca$ cd jk
+student@T21:~/ajce/rmca/jk$ lsd
+
+Command 'lsd' not found, but can be installed with:
+
+snap install lsd
+Please ask your administrator.
+
+student@T21:~/ajce/rmca/jk$ ls
+20  l.txt  r.txt  stu
+student@T21:~/ajce/rmca/jk$ cd..
+cd..: command not found
+student@T21:~/ajce/rmca/jk$ cd ..
+student@T21:~/ajce/rmca$ cd ..
+student@T21:~/ajce$ ls
+l.txt  mca.txt  rmca  r.txt
+student@T21:~/ajce$ cp -r /home/student/ajce/rmca/jk
+cp: missing destination file operand after '/home/student/ajce/rmca/jk'
+Try 'cp --help' for more information.
+student@T21:~/ajce$ ls
+l.txt  mca.txt  rmca  r.txt
+student@T21:~/ajce$ cp -r rmca  /home/student/ajce/rmca/jk
+cp: cannot copy a directory, 'rmca', into itself, '/home/student/ajce/rmca/jk/rmca'
+student@T21:~/ajce$ mkdir h
+student@T21:~/ajce$ cp -r h  /home/student/ajce/rmca/jk
+student@T21:~/ajce$ cd rmca
+student@T21:~/ajce/rmca$ cd jk
+student@T21:~/ajce/rmca/jk$ ls
+20  h  l.txt  rmca  r.txt  stu
+student@T21:~/ajce/rmca/jk$ cp -v l.txt r.txt
+'l.txt' -> 'r.txt'
+student@T21:~/ajce/rmca/jk$ read -n 5 -p "enter 5 number"
+enter 5 number5 3 
+student@T21:~/ajce/rmca/jk$ read -n 5 -p "enter 5 number"
+enter 5 number4 5 7student@T21:~/ajce/rmca/jk$ read -s -p "pwd"
+pwdstudent@T21:~/ajce/rmca/jk$ read a
+5
+student@T21:~/ajce/rmca/jk$ echo a
+a
+student@T21:~/ajce/rmca/jk$ 
+student@T21:~/ajce/rmca/jk$ echo "a"
+a
+student@T21:~/ajce/rmca/jk$ echo 'a'
+a
+student@T21:~/ajce/rmca/jk$ ls
+20  h  l.txt  rmca  r.txt  stu
+student@T21:~/ajce/rmca/jk$ rm l.txt
+student@T21:~/ajce/rmca/jk$ ls
+20  h  rmca  r.txt  stu
+student@T21:~/ajce/rmca/jk$ rm -R h
+student@T21:~/ajce/rmca/jk$ ls
+20  rmca  r.txt  stu
+student@T21:~/ajce/rmca/jk$ cat > h.txt
+hahhkkj
+^C
+student@T21:~/ajce/rmca/jk$ 
+student@T21:~/ajce/rmca/jk$ ls
+20  h.txt  rmca  r.txt  stu
+student@T21:~/ajce/rmca/jk$ rm r.txt h.txt 
+student@T21:~/ajce/rmca/jk$ ls
+20  rmca  stu
+student@T21:~/ajce/rmca/jk$ rm -R 20 stu
+student@T21:~/ajce/rmca/jk$ ls
+rmca
+student@T21:~/ajce/rmca/jk$ cd..
+cd..: command not found
+student@T21:~/ajce/rmca/jk$ cd ..
+student@T21:~/ajce/rmca$ cd ..
+student@T21:~/ajce$ ls
+h  l.txt  mca.txt  rmca  r.txt
+student@T21:~/ajce$ ls -R
+.:
+h  l.txt  mca.txt  rmca  r.txt
+
+./h:
+
+./rmca:
+jk  l.txt  r.txt
+
+./rmca/jk:
+rmca
+
+./rmca/jk/rmca:
+jk  l.txt  r.txt
+
+./rmca/jk/rmca/jk:
+l.txt
+student@T21:~/ajce$ 
+

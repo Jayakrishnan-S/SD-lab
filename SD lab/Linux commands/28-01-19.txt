@@ -1,0 +1,52 @@
+student@T21:~$ echo hai
+hai
+student@T21:~$ read a
+32
+student@T21:~$ echo a
+a
+student@T21:~$ read a;
+5
+student@T21:~$ ECHO $a
+ECHO: command not found
+student@T21:~$ echo $a
+5
+student@T21:~$ man lb
+No manual entry for lb
+student@T21:~$ man echo
+student@T21:~$ echo -e hai
+hai
+student@T21:~$ man echo
+\student@T21:~$ man echo
+student@T21:~$ echo -n hai
+haistudent@T21:~$ man echo
+student@T21:~$ man read
+student@T21:~$ man man
+student@T21:~$ echo the value of a =$a
+the value of a =5
+student@T21:~$ read a,b
+bash: read: `a,b': not a valid identifier
+student@T21:~$ read a
+80
+student@T21:~$ read 
+70
+student@T21:~$ echo a=$a,b=$b
+a=80,b=
+student@T21:~$ read b
+70
+student@T21:~$ echo a=$a,b=$b
+a=80,b=70
+student@T21:~$ man if
+No manual entry for if
+student@T21:~$ man if statement
+No manual entry for if
+No manual entry for statement
+student@T21:~$ man for
+No manual entry for for
+student@T21:~$ man for statement
+No manual entry for for
+No manual entry for statement
+student@T21:~$ man ib
+No manual entry for ib
+student@T21:~$ man print
+student@T21:~$ 
+
